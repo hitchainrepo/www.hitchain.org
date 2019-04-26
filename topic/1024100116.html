@@ -43,7 +43,7 @@
             <a href="../index.html#roadMap" title="Road Map">Road Map</a>
             <a href="../index.html#token" title="Token Sale">Token Distribution
             </a>
-            <!--<a href="faq.html" title="FAQ">FAQ</a>-->            
+            <!--<a href="faq.html" title="FAQ">FAQ</a>-->
             <a href="#contact" title="Contact US" style="display: none">Contact Us</a>
         </nav>
         <div class="lang color-white ff-my-en">
@@ -68,33 +68,47 @@
 		<div class="article">
 			<article class="article-wrapper">
 				<header>
-					<h2 class="title">HitChain Project Biweekly Report:25 February—10 March, 2019</h2>
+					<h2 class="title">HitChain Project Biweekly Report:8 April—21 April, 2019</h2>
 				</header>
 				<div class="second-title">
-					<div class="article-date"><span>March 24, 2019</span></div>
+					<div class="article-date"><span>21 April, 2019</span></div>
 				</div>
 				<blockquote>
 					<p></p>
 				</blockquote>
 				<div class="content">
 					<p class="text-indent-2 font-700">
-						1.Project Progress 
+						1.Project Progress
 					</p>
 					<p class="text-indent-2">
-						1) Implementing the functions of Hit-Java Public Warehouse:
+						1) Improve the documentation of hit usage:
 					</p>
-					<p>					
-						<p class="text-indent-2 mg-05">A. Extending JGit's transport protocol. The HIT protocol is extended on the basis of JGit transport protocol interface. The URLs of the transport protocol begin with hit://. The HIT protocol will be used only when the HIT protocol URL is used. The original functions of other JGit protocols are still used when the URLs of the HIT protocol are not used.</p>
-						<p class="text-indent-2 mg-05">B. Extend the object database based on IPFS. Based on IPFS, Git object database is extended to WalkRemoteObject Database in JGit to realize related interface functions. When Git files and Objects are uploaded and downloaded, content is accessed through IPFS.</p>
-						<p class="text-indent-2 mg-05">C. Extend the storage mechanism of object database based on IPFS. GitFileIndex protocol content in HIT protocol is implemented based on IPFS object database, which ensures that files can be indexed when uploading content and avoids duplicate uploading of duplicate content, so as to improve uploading speed. Integrating the function of interacting with Taifang Intelligent Contract, getting the latest project address and pulling project Metadata through the project address in the Intelligent Contract;</p>
-						<p class="text-indent-2 mg-05">D. Extending HIT URI. Extend the URIish in JGit to support HIT URI. In order to get the latest address of HIT project Clone, the smart contract address is used to get the latest address of the project, and the project Metadata is pulled to get the name of the project, then the Clone operation is performed.</p>
-					</p>					
+					<p>
+						<p class="text-indent-2 mg-05">A. Perfect documentation includes: construction and installation, instructions for use, interface instructions, problems and support, developers, etc.</p>
+					</p>
 					<p class="text-indent-2">
-						2) Continue to study the multiple submission mechanism of HIT:
+						2) Implementing the function of private warehouse:
 					</p>
-					<p>					
-						<p class="text-indent-2 mg-05">A. Continue to study and verify the design of user account information storage and account switching for HIT multiple submission mechanism to ensure that users switch accounts on multiple GIT services for multiple submissions;</p>
-						<p class="text-indent-2 mg-05">B. Continue to study and validate the submission content interpretation of HIT multiple submission mechanism, and separate Commit content for multiple submission.</p>
+					<p>
+                        <p class="text-indent-2 mg-05">A. Implementing the management function of team members.</p>
+                        <p class="text-indent-2 mg-05">B. Add team member management command hit member [add | remove], which can add or delete team members</p>
+                        <p class="text-indent-2 mg-05">C. Implementing the management of private warehouse encryption key pairs.</p>
+                        <p class="text-indent-2 mg-05">D. Add the private warehouse key pair management command hit keypair [add | remove | renew], which can add, delete or update key pairs. At the same time, after changing the key pair, the warehouse will be resubmitted. If the warehouse has configured the key pair, the warehouse will be re-encrypted and submitted. If the warehouse key pair has been removed, the encryption will be removed and resubmitted.</p>
+                        <p class="text-indent-2 mg-05">E. Implement the functions of generating, encrypting and decrypting warehouse key pairs and encrypting and decrypting warehouse files.</p>
+					</p>
+					<p class="text-indent-2">
+                        3) Fix bugs in hit-java public warehouse and its original functions to support private warehouses:
+					</p>
+					<p>
+                        <p class="text-indent-2 mg-05">A. The problem of revising ECC encryption algorithm is compatible with private warehouse encryption algorithm.</p>
+                        <p class="text-indent-2 mg-05">B. Delete Base64 encoding content in RSA encryption algorithm toolkit to ensure that Hex is used globally for unified encoding to reduce the confusion of encoding usage.</p>
+                        <p class="text-indent-2 mg-05">C. Modify the stream reading mode of file encryption and decryption to avoid incomplete read data caused by multiple reads of the same input stream.</p>
+					</p>
+					<p class="text-indent-2">
+                        4) Hit public warehouse command function test:
+					</p>
+					<p>
+                        <p class="text-indent-2 mg-05"> A. Testing the function of hit command.</p>
 					</p>
 				</div>
 			</article>
