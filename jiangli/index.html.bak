@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta id="i18n_pagename" content="index-common">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no, width=device-width">
+    <title>HitChain Developer Autonomous Community</title>
+    <meta name="Keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/motion.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+	<link rel="shortcut icon " type="images/x-icon" href="./favicon.ico">
+    <!--[if IE 9]>
+    <link href="css/ie9.css" rel="stylesheet">
+    <![endif]-->
+	<script language="javascript"type="text/javascript">
+	　　window.location.href="http://hitchain.org/#team";
+	</script>
+</head>
+	<body></body>
+</html>

@@ -1,0 +1,543 @@
+
+/* common style */
+.mg-8 {
+    margin: 0px 8px;
+}
+.mg-r-8 {
+	margin-right: 8px;
+}
+
+#nav.dark {
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.11);
+}
+
+/* TOPIC */
+#topic {
+    font-size: 1.6rem;
+    position: relative;
+	margin: 0 auto;
+}
+
+#topic a {
+}
+
+#topic a:hover {
+	color: #eb5b16;
+}
+
+#topic .breadcrumb {
+	font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #4a4a4a;
+    letter-spacing: 0;
+    text-align: left;
+    width: 77%;
+    height: 35px;
+    line-height: 35px;
+    margin: 10px auto;
+}
+
+
+#topic .article {
+    font-size: 1.6rem;
+	background:#fff;
+	width: 77%;
+	margin: 0 auto;	
+	font-family:MicrosoftYaHei;
+	margin-bottom: 140px;
+	min-height: 360px;
+}
+
+
+#topic .article-wrapper {
+    padding: 25px;
+}
+
+#topic .title {
+    margin-top: 5px;
+    line-height: 1.4;
+	font-size:24px;
+	color:#000000;
+	letter-spacing:0;
+	text-align:left;
+}
+
+blockquote {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+
+#topic blockquote {
+    padding: 5px 20px;
+    color: #243342;
+    border-left: 5px solid #d0d6dc;
+	background:#f2f2f3;
+	font-size:16px;
+	color:#949495;
+	letter-spacing:0;
+	text-align:left;
+	margin: 0 0;
+}
+
+#topic blockquote p {
+	margin: 0px 0px;
+}
+
+#topic .second-title {
+	font-size:14px;
+	color:#9b9b9b;
+	letter-spacing:0;
+	text-align:left;
+	margin: 16px 0px;
+}
+
+#topic .second-title .article-date {
+	background: url(../images/topic/date.png) no-repeat left;
+    padding-left: 26px;
+}
+
+
+#topic h1 {
+    color: #fff;
+}
+
+#topic h1 {
+    z-index: 2;
+}
+
+#topic ul {
+    width: 80%;
+    margin: 3rem auto 8rem;
+    position: relative;
+    z-index: 2;
+}
+
+#topic ul li {
+    width: 100%;
+	padding: 2rem 1rem;
+}
+
+#topic h3 {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#topic h3:hover {
+    color: #fff;
+}
+
+#topic h3:before {
+    content: '+';
+    margin-right: 1rem;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#topic .current h3:before {
+    content: '-';
+    font-size: 2rem;
+}
+
+#topic article {
+    width: 95%;
+    margin: 1rem auto 0;
+    line-height: 1.7;
+}
+
+#topic article .content p {
+    text-align: left;
+    padding: 2px 0;
+	letter-spacing: 0.5px;
+	font-size:16px;
+	color:#4a4a4a;
+	text-align:justify;
+	display: block;
+    margin: 1rem 0rem;
+}
+
+#topic article p:before {
+	margin: 1rem 1rem;
+}
+
+#topic article .mg-05 {
+    text-align: left;
+    padding: 2px 0;
+	letter-spacing: 0.5px;
+	font-size:16px;
+	color:#4a4a4a;
+	text-align:justify;
+	display: block;
+    margin: 0.5rem 0rem;
+}
+
+#topic article .news_img {
+	display: block;
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#topic article .news_img_18 {
+	display: block;
+    width: 180px;
+    margin: 20px auto;
+}
+
+#topic article .news_img_24 {
+	display: block;
+    width: 24%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#topic article .news_img_45 {
+	display: block;
+    width: 45%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#topic article .news_img_50 {
+	display: block;
+    width: 50%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+#topic article .img_title {
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+
+@media (max-width: 767px) {
+    #topic {
+        font-size: 1.4rem;
+    }
+
+	#topic .breadcrumb {
+		font-family: MicrosoftYaHei;
+		font-size: 14px;
+		color: #4a4a4a;
+		letter-spacing: 0;
+		text-align: left;
+		width: 86%;
+		height: auto;
+		line-height: auto;
+		margin: 4px auto;
+	}
+
+	#topic .article {
+		background:#fff;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#topic .article-wrapper {
+		padding: 16px 16px 140px 16px;
+	}
+
+	#topic .title {
+		margin-top: 5px;
+		line-height: 1.4;
+		font-size: 20px;
+		color: #000000;
+		letter-spacing: 0;
+		text-align: left;
+		font-weight: bold;
+	}
+
+	#topic article .content p {
+		text-align: left;
+		padding: 2px 0;
+		letter-spacing: 0.5px;
+		font-size:1.5rem;
+		color:#4a4a4a;
+		text-align:justify;
+		display: block;
+		margin: 1rem 0rem;
+	}
+
+	#topic article .news_img_24 {
+		display: block;
+		width: 55%;
+		height: 100%;
+		margin: 10px auto;
+	}
+
+	#topic article .news_img_50 {
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin: 20px auto;
+	}
+
+    #topic ul {
+        width: 100%;
+    }
+
+    #topic:before {
+        width: 100%;
+        height: 100%;
+    }
+
+    #topic:after {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* TOPIC LIST */
+
+#topic .tp_list_box {
+    font-size: 1.6rem;
+	background:#fff;
+	width: 77%;
+	margin: 0 auto;	
+	font-family:MicrosoftYaHei;
+	margin-bottom: 140px;
+	padding: 45px 0;
+}
+
+#topic .tp_list_box_title {
+    line-height: 1.4;
+	letter-spacing:0;
+    font-size: 34px;
+    color: rgba(0,0,0,.87);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#topic .tp_list {
+    width: 80%;
+    margin: 0rem auto 3rem;
+	min-height: 200px;
+}
+
+#topic .news-row {
+	width: 100%;
+    display: flex;
+    border-style: dashed;
+    padding: 2rem 0rem;
+    border: none;
+    border-bottom: solid 1px #f2f2f3;
+}
+
+#topic .news-row:last-child {
+    border-bottom: none;
+}
+
+#topic .news-row p {
+	color: #8c8c8c;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+#topic .news-row .time-box {
+    margin-right: 50px;
+}
+
+#topic .news-row .time-box .big-date {
+    font-size: 48px;
+    color: black;
+	display: block;
+	text-align: center;
+}
+
+#topic .news-row .time-box .small-date {
+    font-size: 15px;
+    color: #999;
+    display: block;
+}
+
+#topic .news-row .new-title {
+    margin-top: 8px;
+    font-size: 2.2rem;
+    letter-spacing: 0px;
+    color: #151519;
+    margin: 8px 0px 22px 0px;
+    font-weight: 700;
+    height: 30px;
+}
+
+
+#topic .news-row .new-title:hover {
+    color: #eb5b16;
+}
+
+#topic .news-row .more {
+    font-size: 13px;
+    border: solid 1px #eb5b16;
+    border-radius: 100px;
+    margin-top: 8px;
+    display: block;
+    width: 85px;
+    text-align: center;
+    height: 28px;
+    line-height: 26px;
+    color: #eb5b16;
+}
+
+#topic .news-row .more:hover {
+	background-color: #eb5b16;
+	color: #fff;
+}
+
+blockquote {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+}
+
+#topic blockquote {
+    padding: 5px 20px;
+    color: #243342;
+    border-left: 5px solid #d0d6dc;
+	background:#f2f2f3;
+	font-size:16px;
+	color:#949495;
+	letter-spacing:0;
+	text-align:left;
+	margin: 0 0;
+}
+
+#topic blockquote p {
+	margin: 0px 0px;
+}
+
+#topic .second-title {
+	font-size:14px;
+	color:#9b9b9b;
+	letter-spacing:0;
+	text-align:left;
+	margin: 16px 0px;
+}
+
+#topic .second-title .article-date {
+	background: url(../images/topic/date.png) no-repeat left;
+    padding-left: 26px;
+}
+
+
+#topic h1 {
+    color: #fff;
+}
+
+#topic h1 {
+    z-index: 2;
+}
+
+#topic ul {
+    width: 80%;
+    margin: 3rem auto 8rem;
+    position: relative;
+    z-index: 2;
+}
+
+#topic ul li {
+    width: 100%;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+}
+
+#topic ul li a {
+	display: block;
+}
+
+#topic ul li .tag {
+        display: inline-block;
+    color: #999;
+    margin-right: 16px;
+}
+
+
+@media (max-width: 767px) {
+    #topic {
+        font-size: 1.4rem;
+    }
+
+	#topic .tp_list_box {
+		font-size: 1.6rem;
+		background:#fff;
+		width: 100%;
+		margin: 0 auto;	
+		font-family:MicrosoftYaHei;
+		margin-bottom: 10px;
+		padding: 8px 0px;
+	}
+
+	#topic .tp_list {
+		width: 86%;
+		margin: 0rem auto 8rem;
+		min-height: 200px;
+	}
+
+	#topic .news-row .new-title {
+		font-size: 1.75rem;
+		margin: 3px 0px 12px 0px;
+		height: auto;
+	}
+
+	#topic .news-row .time-box {
+		margin-right: 2rem;
+	}
+
+	#topic .news-row .time-box .big-date {
+		font-size: 3rem;
+		color: black;
+		display: block;
+		text-align: center;
+	}
+
+	#topic .news-row .time-box .small-date {
+		font-size: 15px;
+		color: #999;
+		display: block;
+	}
+
+    #topic ul {
+        width: 100%;
+    }
+
+    #topic:before {
+        width: 100%;
+        height: 100%;
+    }
+
+    #topic:after {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.bg-gary {
+	background:#f2f2f3;
+}
+
+#topic .align-center {
+	text-align: center;
+}
+
+#topic .text-indent-2 {
+	text-indent: 2rem;
+}
+
+#topic .font-700 {
+	font-weight: 700;
+}
+
+#topic article .mt-4 {
+	margin-top: 4rem;
+}

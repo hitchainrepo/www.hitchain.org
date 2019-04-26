@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no, width=device-width">
+    <title>hitChain</title>
+    <meta name="Keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="shortcut icon"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="../css/motion.css" rel="stylesheet">
+    <link href="../css/main_zh.css" rel="stylesheet">
+	<link href="../css/topic_zh.css" rel="stylesheet">
+</head>
+<body class="bg-gary">
+
+<div class="bottom_img_btn">
+    <a href="https://t.me/HitChain_EN" target="_blank"><img src="../images/bottom_img_href.png" style="width: 60px;height: 60px;"/></a>
+</div>
+
+
+<!-- nav -->
+<section id="nav" class="dark">
+    <div class="wrapper80">
+        <a class="logo" title="HitChain" href="index.html#home">
+            <img alt="Fusion" class="darkLogo" src="../images/hitchain-logo2.svg"
+                 style="width: 120px;height: 46px;border: none;"/>
+        </a>
+        <nav>
+            <a href="index.html" title="白皮书" id="homeNav">白皮书</a>
+            <a href="index.html#about" title="About" style="display: none">Problems</a>
+            <a href="index.html#vision" title="生态">生态</a>
+           <!-- <a href="#whitePaper" title="whitePaper">白皮书</a>-->
+            <a href="index.html#vision" title="Vision" style="display: none">Vision</a>
+            <a href="index.html#documents" title="Documents" style="display: none">Documents</a>
+            <a href="index.html#team" title="团队/顾问">团队/顾问</a>
+            <a href="topic.html" title="新闻动态" class="current">新闻动态</a>
+            <a href="index.html#friendLink" title="机构投资者">机构投资者</a>
+            <a href="index.html#media" title="合作媒体">合作媒体</a>
+            <a href="index.html#roadMap" title="发展规划" >发展规划</a>
+            <a href="index.html#token" title="代币分配" >代币分配</a>
+            <!--<a href="faq.html" title="常见问题">常见问题</a>-->
+            <a href="../index.html#contact" title="Contact US" style="display: none">Contact Us</a>
+        </nav>
+        <div class="lang color-white ff-my-en">
+            <span class="txt"><em style="font-style: inherit;">中文</em><i class="fa fa-caret-down"></i></span>
+            <ul class="clearfix" style="font-size: 1.55rem;">
+                <li><a href="../index.html">English</a></li>
+                <li><a href="index.html">中文</a></li>
+            </ul>
+        </div>
+        <a href="javascript:;" class="phoneMenu"></a>
+    </div>
+</section>
+
+<!-- home -->
+<div id="fullPage">
+    <section class="section" id="topic" name="topic">
+		<div class="breadcrumb">
+			<span class="mg-r-8"><a href="index.html">首页</a></span>&gt;
+			<span class="mg-8">新闻动态</span>
+		</div>
+		<div class="tp_list_box">
+			<ul id="news_list" class="tp_list"></ul>
+		</div>
+        <!-- footer -->
+        <footer id="footer">
+			<div class="box">
+				<div class="follows">
+					<a class="email" title="Email" href="mailto:contact@hitchain.org"></a>
+					<a class="facebook" target="_blank" title="Facebook"
+					   href="https://www.facebook.com/HitChain-174994073283392/"></a>
+					<a class="twitter" target="_blank" title="Twitter" href="https://twitter.com/Hit_Chain"></a>
+					<a class="telegram" target="_blank" title="Telegram"
+					   href="https://t.me/HitChain_EN"></a>
+					<a class="github" target="_blank" title="Github" href="https://github.com/hitchainrepo"></a>
+					<a class="medium" target="_blank" title="Medium"
+					   href=" https://medium.com/@hitchainfoundation/hitchain-ca324e1628b4"></a>
+					<a class="Gitee" target="_blank" title="Gitee"
+					   href="https://gitee.com/HitChain/HitChain "></a>
+				</div>
+				<div class="copy">
+					Copyright © HitChain Team 2018 HitChain Foundation Limited
+				</div>
+			</div>
+		</footer>
+    </section>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/faq.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+	var news = [
+		{
+			"title":"HitChain基金会受邀参加Finastra Universe大会",date:"2019.03",day:"28",pageNo:"1024000122",
+			"tips":"近日，HitChain基金会应邀参加Finastra Universe Singapore大会，本次Finastra Universe会议汇集了亚太地区金融领域的500多位杰出领导者和专家，会议主题为“Collaborate to Innovate”。..."
+		},
+		{
+			"title":"HitChain 项目双周报（2019年第6期）：3月11日～3月24日",date:"2019.03",day:"24",pageNo:"1024100118",
+			"tips":"汇报近期 HitChain 项目进展..."
+		},
+		{
+			"title":"HitChain 项目双周报（2019年第5期）：2月25日～3月10日",date:"2019.03",day:"10",pageNo:"1024100117",
+			"tips":"汇报近期 HitChain 项目进展..."
+		},
+		{
+			"title":"HitChain 项目双周报（2019年第4期）：2月11日～2月24日",date:"2019.02",day:"24",pageNo:"1024100116",
+			"tips":"汇报近期 HitChain 项目进展..."
+		},
+		{
+			"title":"HitChain 项目双周报（2019年第3期）：1月28日～2月8日",date:"2019.02",day:"08",pageNo:"1024100115",
+			"tips":"汇报近期 HitChain 项目进展..."
+		},
+		{
+			"title":"HitChain 项目双周报（2019年第2期）：1月14日～1月25日",date:"2019.01",day:"25",pageNo:"1024100114",
+			"tips":"汇报近期 HitChain 项目进展..."
+		},
+		{
+			"title":"HitChain 项目双周报（2019年第1期）：1月2日～1月13日",date:"2019.01",day:"13",pageNo:"1024100113",
+			"tips":"HitChain受邀参加GBLS全球无眠区块链行业领袖年终盛典。HitChain资深架构师陈照携技术团队全程参与此次会议，主要与IPFS相关项目方就去中心化内容存储如何产生合作方面进行了研究和探讨。..."
+		},
+		{
+			"title":"公告|HitChain将退市OKEx",date:"2019.01",day:"11",pageNo:"1024000121",
+			"tips":"首先，感谢投资人、社区和各合作伙伴对HitChain项目的信任与支持。由于HitChain基金会战略调整，经过慎重考虑并与OKEx团队友好协商..."
+		},
+		{
+			"title":"HitChain 项目双周报（2018年第9期）：12月17日～12月29日",date:"2018.12",day:"29",pageNo:"1024100112",
+			"tips":"汇报近期 HitChain 项目进展"
+		},
+		{
+			"title":"HitChain 项目双周报（2018年第8期）：12月3日～12月16日",date:"2018.12",day:"16",pageNo:"1024100111",
+			"tips":"汇报近期 HitChain 项目进展"
+		},
+		{
+			"title":"HitChain 项目双周报（2018年第7期）：11月17日～12月2日",date:"2018.12",day:"02",pageNo:"1024100110",
+			"tips":"HitChain 受邀参加重构世界·2018区块链新经济杭州峰会，HitChain资深架构师陈照携技术团队全程参与此次会议，并入围2018区动先锋榜，获得“成长力先锋”奖。"
+		},
+		{
+			"title":"HitChain 项目双周报（2018年第6期）：11月5日～11月16日",date:"2018.11",day:"16",pageNo:"1024100109",
+			"tips":"HitChain 运营团队受邀参加金色财经主办的第二期沙龙活动“金色沙龙论生态；HitChain专注于服务开源项目，提供去中心化代码托管，可与钱包的代码开源展开深度合作"
+		},
+		{
+			"title":"HitChain 项目双周报（2018年第5期）：10月20日～11月4日",date:"2018.11",day:"05",pageNo:"1024100108",
+			"tips":"HitChain 资深架构师陈照携技术团队于杭州参加2018中国计算机大会。HitChain（HIT）于11月1日15:00成功登入火币全球站主板USDT专区，上线HIT/USDT交易"
+		},
+		{
+			"title":"HitChain 项目双周报（2018年第4期）：10月8日～10月19日",date:"2018.10",day:"19",pageNo:"1024100107",
+			"tips":"Hit Web入口的原型搭建与接口实现、Hit协议功能更新、完成开发环境搭建、研究 Gitlab 的替代方案、代码提交数量"
+		},
+		{
+			"title":"HitChain 项目双周报（2018年第3期）：9月15日～9月30日",date:"2018.09",day:"30",pageNo:"1024100106",
+			"tips":"HitChain资深首席架构师陈照于9月20日受邀参加2018云栖大会|全球无眠区块链领袖峰会（GBLS）专场。会议期间，陈照先生介绍了当前环境下HitChain的发展规划以及项目进度，并对HitChain的底层代码进行了深入分析"
+		},
+		{
+			"title":"HitChain作为项目方代表参加BlockDAO产品发布会",date:"2018.09",day:"26",pageNo:"1024000120",
+			"tips":"今日，BlockDAO产品发布会在杭州云栖小镇隆重举行。本次发布会上，云栖小镇管委会联合BlockDAO、北京大学信科区块链研究中心、了得研究院、BlockLabs等多家企事业单位"
+		},
+		{
+			"title":"HitChain与X Infinity达成初步战略合作",date:"2018.09",day:"20",pageNo:"1024000119",
+			"tips":"近日，HitChain资深架构师Jerry Li携技术团队参加世界区块链大会·济州技术大会（WBF）。期间，Jerry Li与加密货币交易服务商X Infinity项目团队"
+		},		
+		{
+			"title":"HitChain 项目双周报（2018年第2期）：9月1日～9月14日",date:"2018.09",day:"15",pageNo:"1024100105",
+			"tips":"9月6日至7日， HitChain资深架构师陈照携技术和运营团队参加了上海浦东2018朗迪中国峰会。本届朗迪中国峰会（Lendit Summit）主题为“智能时代”"
+		},
+		{
+			"title":"HitChain参加澳洲区块链创业交流社区会议",date:"2018.09",day:"10",pageNo:"1024000118",
+			"tips":"近日，在澳洲创业交流社区NextGenius的区块链训练营会议上，HitChain基金会主席黎江介绍并推广了HitChain的愿景规划和代码技术，并与创业人士讨论了服务"
+		},
+		{
+			"title":"HitChain合作伙伴开源中国与百度共同研究在线编程和代码推荐",date:"2018.09",day:"04",pageNo:"1024000117",
+			"tips":"HitChain基金会战略合作伙伴开源中国与百度公司共同获得国家科学技术部“云计算和大数据”重点专项资金支持，将重点研究基于机器编程的智能开发云平台和"
+		},
+		{
+			"title":"HitChain 项目进度双周报——0817～0831",date:"2018.08",day:"31",pageNo:"1024100104",
+			"tips":"新闻回顾：（1）HitChain基金会主席黎江于2018年8月27日代表基金会参加悉尼区块链中心活动：活动中黎江主席与参会嘉宾和主办方进行了深度交流，"
+		},
+		{
+			"title":"开源技术专家陈照加盟HitChain",date:"2018.08",day:"30",pageNo:"1024000116",
+			"tips":"近日，开源技术专家陈照作为资深架构师全职加盟HitChain基金会开发团队。 做为HitChain基金会的全职资深架构师，将负责HitChain代码托管系统的分布式架构"
+		},
+		{
+			"title":"HitChain基金会受邀参加悉尼区块链中心活动",date:"2018.08",day:"28",pageNo:"1024000115",
+			"tips":"昨日，HitChain基金会主席黎江代表基金会参加悉尼区块链中心活动，HitChain与参会嘉宾和主办方进行了深度交流，计划未来在澳洲合作推广HitChain。悉尼区块链"
+		},
+		{
+			"title":"HitChain黎江：只用区块链解决老问题没意义",date:"2018.08",day:"16",pageNo:"1024100103",
+			"tips":"黎江职业生涯的前20年属于金融IT行业。2015年黎江接触到了区块链，彼时的行业环境只能用小众又小众来形容，用黎江的话说，“跑遍了北京城见到的所有区块链公司能真正理解这项技术并有上手经验的人数"
+		},
+		{
+			"title":"HitChain 扬帆起航，迈向国际化新篇章！",date:"2018.08",day:"13",pageNo:"1024100102",
+			"tips":"今天下午18：30，在北京东大街前门23号院，HitChain 基金会战略发布会圆满结束。HitChain 是一个区块链版的开发者社区，是面向开发者的开放型分布式共治组织"
+		},		
+		{
+			"title":"HitChain基金会战略发布会正式开启",date:"2018.08",day:"13",pageNo:"1024000114",
+			"tips":"8月13日16:00，HitChain基金会战略发布会在北京东大街前门 23 号院开启。HitChain 基金会主席黎江先生代表基金会致辞。另外，发布会上，HitChain合作伙伴开源"
+		},
+		{
+			"title":"HitChain基金会主席黎江正式离职微软",date:"2018.08",day:"09",pageNo:"1024000113",
+			"tips":"HitChain基金会主席黎江于今日下午六点卸任微软中国区CTO一职，正式负责HitChain基金会的国际化运营。作为有近三十年全球顶尖跨国公司技术管理经验的技术专家"
+		},
+		{
+			"title":"国家专项资金支持开源中国建设开源生态",date:"2018.08",day:"08",pageNo:"1024000112",
+			"tips":"开源中国获得国家科学技术部“云计算和大数据”2.5重点专项资金支持，此次重点专项由工信部标准院牵头北京大学、国防科技大学、北航、华为、联想、腾讯云、阿里"
+		},
+		{
+			"title":"HitChain基金会对黎江先生身份质疑的澄清",date:"2018.08",day:"07",pageNo:"1024000111",
+			"tips":"今日有不负责任的媒体捕风捉影质疑HitChain基金会主席黎江先生身份不实，这种娱乐化的指责严重损害了HitChain基金会的诚信形象，黎江先生作为微软中国现任CTO"
+		},
+		{
+			"title":"共识的重组：寒夜里的HIT光芒",date:"2018.08",day:"06",pageNo:"1024100101",
+			"tips":"七月底以来，反弹至8000美元以上的BTC再次跌落至7000美元左右，无情地告诉所有依然没有离场的人，熊市还远远没有结束。FCoin的一石激起千层浪也没能力挽狂澜"
+		},
+		{
+			"title":"比特大陆战略投资Hitchain：去中心化的Github社区",date:"2018.07",day:"31",pageNo:"1024100100",
+			"tips":"据近日快讯报道，比特大陆已完成对分布式开发者社区HitChain的战略投资，这是近一个月内，继比特大陆投资世界最大、最活跃的Hackathon组织者和世界最大的Hacker"
+		},
+		{
+			"title":"HitChain获得比特大陆战略投资",date:"2018.07",day:"30",pageNo:"1024000110",
+			"tips":"分布式开源代码平台HitChain获得比特大陆战略投资。HitChain定位为分布式Github，用区块链技术保护开发者的知识产权，鼓励知识创新。据了解，HitChain已经获得"
+		},
+		{
+			"title":"BlockVC战略投资HitChain",date:"2018.07",day:"29",pageNo:"1024000109",
+			"tips":"日前BlockVC战略投资HitChain, HitChain定位于去中心化的Github，用区块链技术保护开发者的知识产权，鼓励知识创新。BlockVC 致力于“将区块链带入主流社会”"
+		},
+		{
+			"title":"HitChain基金会宣布两天内超额完成募资",date:"2018.07",day:"27",pageNo:"1024000108",
+			"tips":"分布式开源代码平台HitChain宣布超额完成募资，目前已经获得火币资本、OK资本、同舟资本、DraperDragon、了得资本、猎人资本、BlockVC等多家著名基金和产业资本"
+		},
+		{
+			"title":"了得资本和猎人资本投资HitChain",date:"2018.07",day:"26",pageNo:"1024000107",
+			"tips":"日前了得资本和猎人资本投资数百万给HitChain, Hitchain定位于多中心化的Github，用区块链技术保护开发者的知识产权，鼓励知识创新，践行用区块链技术解放程序员"
+		},
+		{
+			"title":"同舟资本战略投资HitChain",date:"2018.07",day:"25",pageNo:"1024000106",
+			"tips":"日前同舟资本战略投资HitChain, Hitchain定位于去中心化的Github，用区块链技术保护开发者的知识产权，鼓励知识创新。同舟资本创始人李昌是领先数字货币服务商"
+		},
+		{
+			"title":"HitChain基金会紧急声明： 市场出现冒充HitChain项目同名代币HIT",date:"2018.07",day:"23",pageNo:"1024000105",
+			"tips":"近期市场出现冒充HitChain项目的同名代币HIT，而且代币分配比例和我方完全一致，具有极大的迷惑性和欺骗性。我方做出如下声明：HitChain官方Token地址为"
+		},
+		{
+			"title":"HitChain官方提醒：不存在代投机构",date:"2018.07",day:"20",pageNo:"1024000104",
+			"tips":"HitChain官方提醒：目前Leekico为HitChain唯一众筹平台，Async Capital为HitChain唯一协助募资机构，其他机构或个人谣传有HitChain直投及代投额度，均为虚假消息"
+		},
+		{
+			"title":"HitChain获得火币资本千万级战略投资",date:"2018.07",day:"12",pageNo:"1024000103",
+			"tips":"分布式开源代码平台HitChain获得火币资本千万级战略投资。据了解，HitChain定位为分布式GitHub，已经与拥有全球第二大代码托管平台的开源中国社区达成战略合作"
+		},
+		{
+			"title":"Hitchain授权Async Capital协助募资",date:"2018.07",day:"11",pageNo:"1024000102",
+			"tips":"近期有部分机构声称为Hitchain募资机构。Hitchain官方提醒：目前授权Async Capital协助募资 ，圈内其他机构或个人谣传有Hitchain直投及代投额度，均为虚假消息。"
+		},
+		{
+			"title":"HitChain获OK资本千万级投资",date:"2018.07",day:"11",pageNo:"1024000101",
+			"tips":"HitChain定位为分布式GitHub，与拥有全球第二大代码托管平台的开源中国社区达成战略合作。HitChain创新性提出分布式代码存储和代码管理区块链应用，实现“编码即"
+		},
+		{
+			"title":"分布式开源代码平台HitChain与开源中国达成战略合作",date:"2018.07",day:"04",pageNo:"1024000100",
+			"tips":"HitChain定位为分布式GitHub，与拥有全球第二大代码托管平台的开源中国达成战略合作，创新性提出分布式代码存储和代码管理区块链应用，实现“编码即挖矿”的价值。"
+		},
+	];
+
+	$.each(news, function() {
+		var element = $("#news_list");
+		var data = "<li class='news-row'><div class='time-box'><span class='big-date'>"+this.day+"</span><span class='small-date'>"+this.date+"</span></div><div><a href='topic/"+this.pageNo+".html' target='_blank' class='new-title'>"+this.title+"</a><p>"+this.tips+"...</p><a href='topic/"+this.pageNo+".html' target='_blank' class='more'>查看更多</a></div></li>";
+		element.append(data);
+	});
+});
+
+</script>
+</body>
+</html>
