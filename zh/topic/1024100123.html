@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no, width=device-width">
+    <title>hitChain</title>
+    <meta name="Keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="shortcut icon"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="../../css/motion.css" rel="stylesheet">
+    <link href="../../css/main_zh.css" rel="stylesheet">
+	<link href="../../css/topic_zh.css" rel="stylesheet">
+</head>
+<body class="bg-gary">
+
+<div class="bottom_img_btn">
+    <a href="https://t.me/HitChain_EN" target="_blank"><img src="../../images/bottom_img_href.png" style="width: 60px;height: 60px;"/></a>
+</div>
+
+
+<!-- nav -->
+<section id="nav" class="dark">
+    <div class="wrapper80">
+        <a class="logo" title="HitChain" href="../index.html#home">
+            <img alt="Fusion" class="darkLogo" src="../../images/hitchain-logo2.svg"
+                 style="width: 120px;height: 46px;border: none;"/>
+        </a>
+        <nav>
+            <a href="../index.html" title="白皮书" id="homeNav">白皮书</a>
+            <a href="../index.html#about" title="About" style="display: none">Problems</a>
+            <a href="../index.html#vision" title="生态">生态</a>
+           <!-- <a href="#whitePaper" title="whitePaper">白皮书</a>-->
+            <a href="../index.html#vision" title="Vision" style="display: none">Vision</a>
+            <a href="../index.html#documents" title="Documents" style="display: none">Documents</a>
+            <a href="../index.html#team" title="团队/顾问">团队/顾问</a>
+			<a href="../topic.html" title="新闻动态" class="current">新闻动态</a>
+            <a href="../index.html#friendLink" title="机构投资者">机构投资者</a>
+            <a href="../index.html#media" title="合作媒体">合作媒体</a>
+            <a href="../index.html#roadMap" title="发展规划" >发展规划</a>
+            <a href="../index.html#token" title="代币分配" >代币分配</a>
+            <!--<a href="faq.html" title="常见问题">常见问题</a>-->
+            <a href="../index.html#contact" title="Contact US" style="display: none">Contact Us</a>
+        </nav>
+        <div class="lang color-white ff-my-en">
+            <span class="txt"><em style="font-style: inherit;">中文</em><i class="fa fa-caret-down"></i></span>
+            <ul class="clearfix" style="font-size: 1.55rem;">
+                <li><a href="../../index.html">English</a></li>
+                <li><a href="../index.html">中文</a></li>
+            </ul>
+        </div>
+        <a href="javascript:;" class="phoneMenu"></a>
+    </div>
+</section>
+
+<!-- home -->
+<div id="fullPage">
+    <section class="section" id="topic" name="topic">
+		<div class="breadcrumb">
+			<span class="mg-r-8"><a href="../index.html">首页</a></span>&gt;
+			<span class="mg-8"><a href="../topic.html">新闻</a></span>&gt;
+			<span class="mg-8">详情</span>
+		</div>
+		<div class="article">
+			<article class="article-wrapper">
+				<header>
+					<h2 class="title">HitChain 项目双周报（2019年第11期）：5月20日～6月2日</h2>
+				</header>
+				<div class="second-title">
+					<div class="article-date"><span>2019-6-2</span></div>
+				</div>
+				<blockquote>
+					<p></p>
+				</blockquote>
+				<div class="content">
+					<p class="text-indent-2 font-700">
+						1.项目进展						
+					</p>
+					<p class="text-indent-2">
+						1）添加用于记录 Pull Request 的智能合约：
+					</p>
+					<p>
+						<p class="text-indent-2 mg-05">a、添加 Pull Request 智能合约以支持 Pull Request，编写智能合约代码实现智能合约相关功能；</p>
+						<p class="text-indent-2 mg-05">b、Pull Request 智能合约部署与功能测试；</p>
+						<p class="text-indent-2 mg-05">c、添加 Pull Request 智能合约操作 API 以及操作 Pull Request 智能合约 API 的实现。</p>
+					</p>
+					<p class="text-indent-2">
+						2）更新 Repository Name 智能合约：
+					</p>
+					<p>
+						<p class="text-indent-2 mg-05">a、更新 Repository Name 智能合约，添加 Pull  Request 的支持；</p>
+						<p class="text-indent-2 mg-05">b、优化 Repository Name 智能合约，删除多余的操作函数及变量重命名，优化变量的声明及使用方式以节约 Gas 消耗；<?
+						<p class="text-indent-2 mg-05">c、更新 Repository Name 智能合约的 API及实现，同步实现相关功能的变更；</p>
+						<p class="text-indent-2 mg-05">d、更新 hit contract 命令，同步更新 Repository Name 智能合约的操作变更。</p>
+					</p>
+					<p class="text-indent-2">
+						3）添加区块链 API 入口地址配置：
+					</p>
+					<p>
+						<p class="text-indent-2 mg-05">a、添加 hit cfg chainapi 配置命令，通过该配置命令可以配置区块链（以太坊）API 入口地址，可以用于主链及测试链的 API 入口地址的切换。</p>
+					</p>
+					<p class="text-indent-2">
+						4）优化智能合约操作相关功能：
+					</p>
+					<p>
+						<p class="text-indent-2 mg-05">a、 优化智能合约操作的相关功能，包括合约部署、函数调用等，支持通用的合约调用方式。</p>
+					</p>
+					<p class="text-indent-2">
+						5）文件档更新：
+					</p>
+					<p>
+						<p class="text-indent-2 mg-05">a、 添加 0.0.2 版本说明文档，添加 ChangeList，详见：hitchainrepo.github.io；</p>
+						<p class="text-indent-2 mg-05">b、添加 0.0.3 版本说明文档，添加 ChangeList，详见：hitchainrepo.github.io。</p>
+					</p>
+
+					<p class="text-indent-2 font-700">
+						2.研发计划
+					</p>
+					<p class="text-indent-2">
+						1）6月份计划
+					</p>
+					<p>
+						<p class="text-indent-2 mg-05">a、实现 Pull Request 基本功能，支持 Pull Request 的提交；</p>
+						<p class="text-indent-2 mg-05">b、实现外部 Git 仓库一键导入功能，支持 Pull Request 导入。</p>
+					</p>
+					<p class="text-indent-2">
+						2）后续计划
+					</p>
+					<p>
+						<p class="text-indent-2 mg-05">a、实现代码仓库浏览器，可检索区块链上的代码仓库项目信息；</p>
+						<p class="text-indent-2 mg-05">b、实现 Pull Request 浏览器，支持可视化 Pull Request 浏览；</p>
+						<p class="text-indent-2 mg-05">c、实现 hit 钱包，用于管理所属的仓库、 HIT 代币交易、ETH 代币交易。</p>
+					</p>
+				</div>
+				<div class="align-center">
+					<img src="../../images/hitchain-wx.jpg" class="news_img_24"/>
+					(扫码关注官方账号）
+				</div>
+			</article>
+		</div>
+        <!-- footer -->
+        <footer id="footer">
+			<div class="box">
+				<div class="follows">
+					<a class="email" title="Email" href="mailto:contact@hitchain.org"></a>
+					<a class="facebook" target="_blank" title="Facebook"
+					   href="https://www.facebook.com/HitChain-174994073283392/"></a>
+					<a class="twitter" target="_blank" title="Twitter" href="https://twitter.com/Hit_Chain"></a>
+					<a class="telegram" target="_blank" title="Telegram"
+					   href="https://t.me/HitChain_EN"></a>
+					<a class="github" target="_blank" title="Github" href="https://github.com/hitchainrepo"></a>
+					<a class="medium" target="_blank" title="Medium"
+					   href=" https://medium.com/@hitchainfoundation/hitchain-ca324e1628b4"></a>
+					<a class="Gitee" target="_blank" title="Gitee"
+					   href="https://gitee.com/HitChain/HitChain "></a>
+				</div>
+				<div class="copy">
+					Copyright © HitChain Team 2018 HitChain Foundation Limited
+				</div>
+			</div>
+		</footer>
+    </section>
+</div>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/faq.js" type="text/javascript"></script>
+</body>
+</html>
