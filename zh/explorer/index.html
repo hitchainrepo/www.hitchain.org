@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TylerChen">
+    <title>HitChain Project Explorer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./resources/bootstrap-4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./theme.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrapper">
+    <header id="header" class="u-header">
+        <div class="u-header__section py-1">
+            <div id="logoAndNav" class="container">
+                <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space hs-menu-initialized hs-menu-horizontal">
+                    <div class="w-lg-auto">
+                        <a class="navbar-brand pt-md-0 bg-gray-750 text-white" href="http://www.hitchain.org"
+                           target="_parent"
+                           aria-label="Etherscan">&nbsp;&nbsp;
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 x="0px" y="0px" width="36" height="36" viewBox="0 0 129.072 129.072"
+                                 enable-background="new 0 0 129.072 129.072" xml:space="preserve">
+            <title>HitChain</title>
+                                <g>
+                <defs>
+                    <path id="XMLID_53_" d="M56.099,0l55.889,32.268v64.536l-55.889,32.268L0.21,96.804V32.268L56.099,0z M56.099,8.682L7.729,36.609
+                          v55.854l48.371,27.927l48.371-27.927V36.609L56.099,8.682z"></path>
+                </defs>
+                                    <clipPath id="XMLID_2_">
+                    <use xlink:href="#XMLID_53_" overflow="visible"></use>
+                </clipPath>
+                                    <g clip-path="url(#XMLID_2_)">
+                    <defs>
+                        <rect id="XMLID_57_" x="-382.494" y="-56.641" width="877.187" height="576.437"></rect>
+                    </defs>
+                                        <clipPath id="XMLID_3_">
+                        <use xlink:href="#XMLID_57_" overflow="visible"></use>
+                    </clipPath>
+                                        <rect id="XMLID_58_" x="-0.417" y="-0.627" clip-path="url(#XMLID_3_)"
+                                              fill="#FFF"
+                                              width="113.032" height="130.325"></rect>
+                </g>
+            </g>
+                                <g>
+                <path fill="#EB5B16" d="M51.837,75.686c0,2.047-0.568,3.555-1.703,4.523c-1.135,0.968-2.478,1.452-4.029,1.452
+                    c-1.55,0-2.893-0.484-4.028-1.452s-1.703-2.476-1.703-4.523V49.195c0-2.047,0.568-3.555,1.703-4.523s2.478-1.452,4.028-1.452
+                    c0.991,0,1.898,0.198,2.719,0.594c0.237-0.863,0.536-1.693,0.898-2.487c0.846-1.861,1.938-3.493,3.273-4.884
+                    c-0.574-0.294-1.167-0.553-1.781-0.775c-1.689-0.609-3.392-0.913-5.108-0.913c-1.717,0-3.419,0.304-5.108,0.913
+                    s-3.198,1.494-4.527,2.656c-1.384,1.217-2.492,2.739-3.322,4.565c-0.831,1.826-1.246,3.928-1.246,6.308v26.491
+                    c0,2.49,0.415,4.62,1.246,6.391c0.831,1.771,1.938,3.237,3.322,4.399c1.329,1.217,2.838,2.13,4.527,2.739
+                    c1.689,0.609,3.392,0.913,5.108,0.913c1.717,0,3.419-0.304,5.108-0.913c1.689-0.609,3.226-1.522,4.61-2.739
+                    c1.329-1.162,2.409-2.628,3.239-4.399c0.831-1.771,1.246-3.901,1.246-6.391V67.41h-8.472V75.686z"></path>
+                                    <path fill="#FFF" d="M60.362,49.195c0-2.047,0.568-3.555,1.703-4.523c1.135-0.968,2.478-1.452,4.028-1.452
+                    c1.551,0,2.893,0.484,4.028,1.452c1.135,0.968,1.703,2.476,1.703,4.523v26.491c0,2.047-0.568,3.555-1.703,4.523
+                    c-1.135,0.968-2.478,1.452-4.028,1.452c-0.991,0-1.898-0.198-2.719-0.594c-0.237,0.863-0.536,1.693-0.898,2.487
+                    c-0.846,1.861-1.938,3.493-3.273,4.884c0.574,0.294,1.167,0.553,1.781,0.775c1.689,0.609,3.392,0.913,5.108,0.913
+                    c1.717,0,3.419-0.304,5.108-0.913c1.689-0.609,3.198-1.494,4.527-2.656c1.384-1.217,2.492-2.739,3.323-4.565
+                    c0.831-1.826,1.246-3.928,1.246-6.308V49.195c0-2.49-0.415-4.62-1.246-6.391c-0.831-1.771-1.938-3.237-3.323-4.399
+                    c-1.329-1.217-2.838-2.13-4.527-2.739c-1.689-0.609-3.392-0.913-5.108-0.913c-1.717,0-3.419,0.304-5.108,0.913
+                    c-1.689,0.609-3.226,1.522-4.61,2.739c-1.329,1.162-2.409,2.628-3.239,4.399c-0.831,1.771-1.246,3.901-1.246,6.391v8.276h8.472
+                    V49.195z"></path>
+            </g>
+            </svg>
+                            HitChain&nbsp;&nbsp;
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column w-100">
+                        <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse order-md-2">
+                            <ul class="navbar-nav u-header__navbar-nav px-2 px-md-0">
+                                <li class="nav-item u-header__nav-item active">
+                                    <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="u-header__nav-separator ml-3"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="mb-4">
+            <div class="card bg-gray-750">
+                <div class="card-body px-sm-4 pb-sm-4 ">
+                    <div class="input-group input-group-main">
+                        <div class="input-group-prepend d-none d-md-block">
+                            <select name="f"
+                                    class="custom-select custom-arrow-select input-group-text font-size-base filterby">
+                                <option selected="" value="0">All Filters</option>
+                                <option value="1">Addresses</option>
+                                <option value="2">Contracts</option>
+                            </select>
+
+                        </div>
+                        <input id="txtSearchInput" type="text"
+                               class="form-control form-control--focus-white searchautocomplete ui-autocomplete-input list-unstyled py-3 mb-0"
+                               placeholder="Search Repository by Contract Address"
+                               aria-describedby="button-header-search" name="q" value="0x48e154cb7040602163236df58a8cc3c0836425e1"
+                               autocomplete="off">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary btn-secondary-darkmode" onclick="listRepositories()" type="button">
+                                <i class="fa fa-search d-inline-block d-sm-none"></i><span
+                                    class="d-none d-sm-inline-block">Search</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="card h-100">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h2 class="card-header-title">Latest Repositories</h2>
+                    </div>
+                    <div class="js-scrollbar card-body overflow-hidden mCustomScrollbar _mCS_1 mCS-autoHide"
+                         style="height: 400px; position: relative; overflow: visible;">
+                        <div id="mCSB_1" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside"
+                             style="max-height: none;" tabindex="0">
+                            <div id="mCSB_1_container" class="mCSB_container"
+                                 style="position: relative; top: 0px; left: 0px;" dir="ltr">
+                                <!-- template content -->
+                            </div>
+                        </div>
+                        <div id="mCSB_1_scrollbar_vertical"
+                             class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"
+                             style="display: block;">
+                            <div class="mCSB_draggerContainer">
+                                <div id="mCSB_1_dragger_vertical" class="mCSB_dragger"
+                                     style="position: absolute; min-height: 50px; display: block; height: 215px; max-height: 366px; top: 0px;">
+                                    <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                                </div>
+                                <div class="mCSB_draggerRail"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-xs btn-block btn-soft-primary" href="#">View All Repositories</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card h-100">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h2 class="card-header-title">Contracts</h2>
+                    </div>
+                    <div class="js-scrollbar card-body overflow-hidden mCustomScrollbar _mCS_2 mCS-autoHide"
+                         style="height: 400px; position: relative; overflow: visible;">
+                        <div id="mCSB_2" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside"
+                             tabindex="0"
+                             style="max-height: none;">
+                            <div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;"
+                                 dir="ltr">
+                                <!--<div class="row">-->
+                                <!--<div class="col-sm-4">-->
+                                <!--<div class="media align-items-sm-center mr-4 mb-1 mb-sm-0">-->
+                                <!--<div class="d-none d-sm-flex mr-2"><span-->
+                                <!--class="btn btn-icon btn-soft-secondary rounded-circle"><span-->
+                                <!--class="btn-icon__inner text-dark">Tx</span></span></div>-->
+                                <!--<div class="media-body"><span-->
+                                <!--class="d-inline-block d-sm-none mr-1">TX#</span><a-->
+                                <!--class="hash-tag hash-tag&#45;&#45;xs hash-tag-xs-down&#45;&#45;md text-truncate"-->
+                                <!--href="/tx/0x122da9087ed574ac6ff0dec6949b3c07bce3948663948ebfe8d9aad0fd2e7327">0x122da9087ed574ac6ff0dec6949b3c07bce3948663948ebfe8d9aad0fd2e7327</a><span-->
+                                <!--class="d-none d-sm-block small text-secondary">16 secs ago</span>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-sm-8">-->
+                                <!--<div class="d-sm-flex justify-content-between">-->
+                                <!--<div class="text-nowrap mr-4 mb-1 mb-sm-0"><span>From <a-->
+                                <!--class="hash-tag text-truncate"-->
+                                <!--href="/address/0xf3f7eb8f0aa7e53fda82c35e84bcdb190a282d73">0xf3f7eb8f0aa7e53fda82c35e84bcdb190a282d73</a></span><span-->
+                                <!--class="d-sm-block">To <a-->
+                                <!--href="/address/0x9f2c9b71e7181a8216a3e0865c578e7ef1cfafd9"-->
+                                <!--class="hash-tag text-truncate">0x9f2c9b71e7181a8216a3e0865c578e7ef1cfafd9</a></span>-->
+                                <!--</div>-->
+                                <!--<div><span-->
+                                <!--class="u-label u-label&#45;&#45;xs u-label&#45;&#45;badge-in u-label&#45;&#45;secondary text-center text-nowrap"-->
+                                <!--title="Amount">1 wei</span></div>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--<hr class="hr-space">-->
+                            </div>
+                        </div>
+                        <div id="mCSB_2_scrollbar_vertical"
+                             class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical"
+                             style="display: block;">
+                            <div class="mCSB_draggerContainer">
+                                <div id="mCSB_2_dragger_vertical" class="mCSB_dragger"
+                                     style="position: absolute; min-height: 50px; display: block; height: 215px; max-height: 366px; top: 0px;">
+                                    <div class="mCSB_dragger_bar" style="line-height: 50px;"></div>
+                                </div>
+                                <div class="mCSB_draggerRail"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-xs btn-block btn-soft-primary" href="#">View All Contracts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-gray-750 py-4">
+    <div class="container">
+        <div class="row justify-content-sm-between align-items-center">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="d-flex align-items-center">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px" width="36" height="36" viewBox="0 0 129.072 129.072"
+                         enable-background="new 0 0 129.072 129.072" xml:space="preserve">
+            <title>HitChain</title>
+                        <g>
+                <defs>
+                    <path id="XMLID_53_" d="M56.099,0l55.889,32.268v64.536l-55.889,32.268L0.21,96.804V32.268L56.099,0z M56.099,8.682L7.729,36.609
+                          v55.854l48.371,27.927l48.371-27.927V36.609L56.099,8.682z"></path>
+                </defs>
+                            <clipPath id="XMLID_2_">
+                    <use xlink:href="#XMLID_53_" overflow="visible"></use>
+                </clipPath>
+                            <g clip-path="url(#XMLID_2_)">
+                    <defs>
+                        <rect id="XMLID_57_" x="-382.494" y="-56.641" width="877.187" height="576.437"></rect>
+                    </defs>
+                                <clipPath id="XMLID_3_">
+                        <use xlink:href="#XMLID_57_" overflow="visible"></use>
+                    </clipPath>
+                                <rect id="XMLID_58_" x="-0.417" y="-0.627" clip-path="url(#XMLID_3_)" fill="#FFF"
+                                      width="113.032" height="130.325"></rect>
+                </g>
+            </g>
+                        <g>
+                <path fill="#EB5B16" d="M51.837,75.686c0,2.047-0.568,3.555-1.703,4.523c-1.135,0.968-2.478,1.452-4.029,1.452
+                    c-1.55,0-2.893-0.484-4.028-1.452s-1.703-2.476-1.703-4.523V49.195c0-2.047,0.568-3.555,1.703-4.523s2.478-1.452,4.028-1.452
+                    c0.991,0,1.898,0.198,2.719,0.594c0.237-0.863,0.536-1.693,0.898-2.487c0.846-1.861,1.938-3.493,3.273-4.884
+                    c-0.574-0.294-1.167-0.553-1.781-0.775c-1.689-0.609-3.392-0.913-5.108-0.913c-1.717,0-3.419,0.304-5.108,0.913
+                    s-3.198,1.494-4.527,2.656c-1.384,1.217-2.492,2.739-3.322,4.565c-0.831,1.826-1.246,3.928-1.246,6.308v26.491
+                    c0,2.49,0.415,4.62,1.246,6.391c0.831,1.771,1.938,3.237,3.322,4.399c1.329,1.217,2.838,2.13,4.527,2.739
+                    c1.689,0.609,3.392,0.913,5.108,0.913c1.717,0,3.419-0.304,5.108-0.913c1.689-0.609,3.226-1.522,4.61-2.739
+                    c1.329-1.162,2.409-2.628,3.239-4.399c0.831-1.771,1.246-3.901,1.246-6.391V67.41h-8.472V75.686z"></path>
+                            <path fill="#FFF" d="M60.362,49.195c0-2.047,0.568-3.555,1.703-4.523c1.135-0.968,2.478-1.452,4.028-1.452
+                    c1.551,0,2.893,0.484,4.028,1.452c1.135,0.968,1.703,2.476,1.703,4.523v26.491c0,2.047-0.568,3.555-1.703,4.523
+                    c-1.135,0.968-2.478,1.452-4.028,1.452c-0.991,0-1.898-0.198-2.719-0.594c-0.237,0.863-0.536,1.693-0.898,2.487
+                    c-0.846,1.861-1.938,3.493-3.273,4.884c0.574,0.294,1.167,0.553,1.781,0.775c1.689,0.609,3.392,0.913,5.108,0.913
+                    c1.717,0,3.419-0.304,5.108-0.913c1.689-0.609,3.198-1.494,4.527-2.656c1.384-1.217,2.492-2.739,3.323-4.565
+                    c0.831-1.826,1.246-3.928,1.246-6.308V49.195c0-2.49-0.415-4.62-1.246-6.391c-0.831-1.771-1.938-3.237-3.323-4.399
+                    c-1.329-1.217-2.838-2.13-4.527-2.739c-1.689-0.609-3.392-0.913-5.108-0.913c-1.717,0-3.419,0.304-5.108,0.913
+                    c-1.689,0.609-3.226,1.522-4.61,2.739c-1.329,1.162-2.409,2.628-3.239,4.399c-0.831,1.771-1.246,3.901-1.246,6.391v8.276h8.472
+                    V49.195z"></path>
+            </g>
+            </svg>
+                    <span class="h5 text-white mb-0 ml-3">Powered by HitChain</span>
+                </div>
+            </div>
+            <div class="col-sm-6 align-self-bottom">
+
+                <div class="d-flex justify-content-sm-end align-items-center">
+                    <a class="btn btn-xss btn-soft-light mr-2" href="#">
+                        <i class="fa fa-cogs mr-1"></i>Preferences
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="opacity-md">
+        <div class="row justify-content-between align-items-center font-size-1">
+            <div class="col-md-6 mb-2 mb-md-0 d-flex">
+                <p class="mb-0 text-white">HitChain © 2019 (TestNet)</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <p class="mb-0 text-white">Donations <a class="text-white-70"
+                                                        href="https://etherscan.io/address/0x5b4b89eF13788653784ADb67Ec9dadeA1064a490">0x5b4b89eF13788653784ADb67Ec9dadeA1064a490</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<template id="tpl_repository">
+    <div class="row">
+        <div class="col-sm-1">
+            <div class="media align-items-sm-center mr-4 mb-1 mb-sm-0">
+                <div class="d-none d-sm-flex mr-2"><span
+                        class="btn btn-icon btn-soft-secondary"><span
+                        class="btn-icon__inner text-dark">{{args.id}}</span></span></div>
+                <!--<div class="media-body"><span class="d-inline-block d-sm-none">Block</span>-->
+                <!--<a-->
+                <!--href="/block/6325316">6325316</a><span-->
+                <!--class="d-sm-block small text-secondary ml-1 ml-sm-0 text-nowrap"> 16 secs ago</span>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="justify-content-between m-auto">
+                <div class="text-wrap"><span class="d-block mb-1 mb-sm-0 p-0">hit://{{args.owner}}-{{args.id}}.git</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="d-flex justify-content-between">
+                <div class="text-nowrap"><span class="d-block mb-1 mb-sm-0 p-0">{{args.repositoryName}}</span></div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-space">
+</template>
+
+<script src="./resources/jquery/jquery-3.3.1.min.js"></script>
+<script src="./resources/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="./resources/js/feather.min.js"></script>
+<script src="./web3.min.js"></script>
+<script>document.write('<script src="./resources/js/TC.js?_='+new Date().getTime()+'"><\/script>')</script>
+<script>document.write('<script src="./resources/js/template.js?_='+new Date().getTime()+'"><\/script>')</script>
+<script>document.write('<script src="./index.js?_='+new Date().getTime()+'"><\/script>')</script>
+</body>
+</html>
+
